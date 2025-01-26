@@ -45,7 +45,6 @@ void DropDownItem::onNotifiedByChild(bool state)
 	if (state == false)
 	{
 		setCheckedState(false);
-		notifyRootObservers(getCheckedState());
 	}
 	else if (state == true)
 	{
@@ -57,8 +56,8 @@ void DropDownItem::onNotifiedByChild(bool state)
 		}
 
 		setCheckedState(newState);
-		notifyRootObservers(getCheckedState());
 	}
+	notifyRootObservers(getCheckedState());
 }
 
 void DropDownItem::onNotifiedByParent(bool state)
