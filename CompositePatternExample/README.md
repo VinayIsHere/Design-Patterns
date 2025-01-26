@@ -1,15 +1,16 @@
-Here is the example structure:
 
-[On/Off]Root
-	-[On/Off] Group 1
-		-[On/Off] Item 1
-		-[On/Off] Item 2
-	-[On/Off] Group 2
-		-[On/Off] Item 3
-		-[On/Off] Item 4
+# Problme Statement
 
-What we have to implement is:
-	* Users can create tree hierarchy with nth depth.
-	* Turning ON Group 1 should Turn On Item 1 and Item 2 also.
-	* Turning OFF Group 1 should Uncheck Item 1 & Item 2 also.
-	* If Group 1 is on & Group 2 in off, Root should remain turn off. It can become On when both group 1 and group 2 is on.
+- [ ] Root
+  - [ ] Group 1
+    - [ ] Item 1
+    - [ ] Item 2
+  - [ ] Group 2
+    - [ ] Item 3
+    - [ ] Item 4
+
+## Notes
+1. User can create Tree hierarchy with `n` depth.
+2. Checking Group 1 should check Item 1 & Item 2 also.
+3. Unchecking Group 1 should uncheck Item 1 & Item 2 also.
+4. If Group 1 is checked and Group 2 is unchecked, Root should be in a nondeterministic state.
