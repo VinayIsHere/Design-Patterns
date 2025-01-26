@@ -13,25 +13,13 @@ public:
 	IDropDownComponent(std::string itemName): m_itemName(itemName)
 	{}
 
-	virtual void add(std::shared_ptr<IDropDownComponent> dropDownComponent)
-	{
-		throw std::logic_error("wrong operation");
-	}
+	virtual void add(std::shared_ptr<IDropDownComponent> dropDownComponent) = 0;
 
-	virtual void remove(std::shared_ptr<IDropDownComponent> dropDownComponent)
-	{
-		throw std::logic_error("wrong operation");
-	}
+	virtual void remove(std::shared_ptr<IDropDownComponent> dropDownComponent) = 0;
 
-	virtual void turnOn()
-	{
-		throw std::logic_error("wrong operation");
-	}
-
-	virtual void turnOff()
-	{
-		throw std::logic_error("wrong operation");
-	}
+	virtual void turnOn() = 0;
+	
+	virtual void turnOff() = 0;
 
 	virtual ~IDropDownComponent() = default;
 
