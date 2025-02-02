@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\vk216\Documents\DesignPatterns\DesignPatterns\FactoryPattern\ChicagoPizzaStore.h(32,1): warning C4715: 'ChicagoPizzaStore::createPizza': not all control paths return a value
+C:\Users\vk216\Documents\DesignPatterns\DesignPatterns\FactoryPattern\NYPizzaStore.h(31,1): warning C4715: 'NYPizzaStore::createPizza': not all control paths return a value
+  DesignPatterns.vcxproj -> C:\Users\vk216\Documents\DesignPatterns\DesignPatterns\x64\Debug\DesignPatterns.exe

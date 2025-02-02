@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\ChicagoIngredient">
+      <UniqueIdentifier>{bf1c52a8-6a5d-46c7-9555-bed0d4c3cb4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\NYIngredient">
+      <UniqueIdentifier>{e976d2cd-fa93-4859-a018-567c90306297}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Factory">
+      <UniqueIdentifier>{9aaf244d-f1dc-493e-912a-696bab9fdb10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PizzaStore">
+      <UniqueIdentifier>{09edae7c-c796-4928-bd89-3d2f4488f53c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Pizza">
+      <UniqueIdentifier>{c7128df0-72f7-4c9d-9405-3a610ee40329}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Ingredients">
+      <UniqueIdentifier>{79d4872d-0d39-42ec-a2f1-5468d9809974}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FreshClams.h">
+      <Filter>Header Files\NYIngredient</Filter>
+    </ClInclude>
+    <ClInclude Include="MarianaSauce.h">
+      <Filter>Header Files\NYIngredient</Filter>
+    </ClInclude>
+    <ClInclude Include="RaggianoCheese.h">
+      <Filter>Header Files\NYIngredient</Filter>
+    </ClInclude>
+    <ClInclude Include="SlicedPepporoni.h">
+      <Filter>Header Files\NYIngredient</Filter>
+    </ClInclude>
+    <ClInclude Include="ThinCrustDough.h">
+      <Filter>Header Files\NYIngredient</Filter>
+    </ClInclude>
+    <ClInclude Include="PizzaIngredientFactory.h">
+      <Filter>Header Files\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="SimplePizzaFactory.h">
+      <Filter>Header Files\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="NYPizzaIngredientFactory.h">
+      <Filter>Header Files\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="NYPizzaStore.h">
+      <Filter>Header Files\PizzaStore</Filter>
+    </ClInclude>
+    <ClInclude Include="PizzaStore.h">
+      <Filter>Header Files\PizzaStore</Filter>
+    </ClInclude>
+    <ClInclude Include="ChicagoPizzaStore.h">
+      <Filter>Header Files\PizzaStore</Filter>
+    </ClInclude>
+    <ClInclude Include="CheesePizza.h">
+      <Filter>Header Files\Pizza</Filter>
+    </ClInclude>
+    <ClInclude Include="ClamPizza.h">
+      <Filter>Header Files\Pizza</Filter>
+    </ClInclude>
+    <ClInclude Include="NYStyleCheesePizza.h">
+      <Filter>Header Files\Pizza</Filter>
+    </ClInclude>
+    <ClInclude Include="NyStylePepporoniPizza.h">
+      <Filter>Header Files\Pizza</Filter>
+    </ClInclude>
+    <ClInclude Include="PepporoniPizza.h">
+      <Filter>Header Files\Pizza</Filter>
+    </ClInclude>
+    <ClInclude Include="VeggiePizza.h">
+      <Filter>Header Files\Pizza</Filter>
+    </ClInclude>
+    <ClInclude Include="ChicagoStyleCheesePizza.h">
+      <Filter>Header Files\Pizza</Filter>
+    </ClInclude>
+    <ClInclude Include="ChicagoStylePepporoniPizza.h">
+      <Filter>Header Files\Pizza</Filter>
+    </ClInclude>
+    <ClInclude Include="Pizza.h">
+      <Filter>Header Files\Pizza</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheese.h">
+      <Filter>Header Files\Ingredients</Filter>
+    </ClInclude>
+    <ClInclude Include="Clams.h">
+      <Filter>Header Files\Ingredients</Filter>
+    </ClInclude>
+    <ClInclude Include="Dough.h">
+      <Filter>Header Files\Ingredients</Filter>
+    </ClInclude>
+    <ClInclude Include="Pepporoni.h">
+      <Filter>Header Files\Ingredients</Filter>
+    </ClInclude>
+    <ClInclude Include="Sauce.h">
+      <Filter>Header Files\Ingredients</Filter>
+    </ClInclude>
+    <ClInclude Include="ThickCrustDough.h">
+      <Filter>Header Files\ChicagoIngredient</Filter>
+    </ClInclude>
+    <ClInclude Include="FrozenClams.h">
+      <Filter>Header Files\ChicagoIngredient</Filter>
+    </ClInclude>
+    <ClInclude Include="MozzarellaCheese.h">
+      <Filter>Header Files\ChicagoIngredient</Filter>
+    </ClInclude>
+    <ClInclude Include="PlumTomatoSauce.h">
+      <Filter>Header Files\ChicagoIngredient</Filter>
+    </ClInclude>
+    <ClInclude Include="ChicagoPizzaIngredientFactory.h">
+      <Filter>Header Files\Factory</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

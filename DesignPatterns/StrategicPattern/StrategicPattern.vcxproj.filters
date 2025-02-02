@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Duck">
+      <UniqueIdentifier>{9c795ca2-a6d5-4e1d-89c5-34a673470f23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Duck\Interface">
+      <UniqueIdentifier>{5d45e0be-e678-4831-be83-bb9ea59cb59a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\QuackBehavior">
+      <UniqueIdentifier>{03d1660a-3f09-4780-8724-09990454cd88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\QuackBehavior\Interface">
+      <UniqueIdentifier>{ea3777aa-a0a8-4b59-a89f-eff16d60502c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\FlyBehavior">
+      <UniqueIdentifier>{dda1664e-75fc-483a-b7fc-6787165df2f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\FlyBehavior\Interface">
+      <UniqueIdentifier>{829747b9-c84b-4f18-900f-6f084512b186}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Duck\Interface\IDuck.h">
+      <Filter>Header Files\Duck\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Duck\MallardDuck.h">
+      <Filter>Header Files\Duck</Filter>
+    </ClInclude>
+    <ClInclude Include="QuackBehavior\Interface\IQuackBehavior.h">
+      <Filter>Header Files\QuackBehavior\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="QuackBehavior\MuteQuack.h">
+      <Filter>Header Files\QuackBehavior</Filter>
+    </ClInclude>
+    <ClInclude Include="QuackBehavior\Quack.h">
+      <Filter>Header Files\QuackBehavior</Filter>
+    </ClInclude>
+    <ClInclude Include="QuackBehavior\Sqeak.h">
+      <Filter>Header Files\QuackBehavior</Filter>
+    </ClInclude>
+    <ClInclude Include="FlyBehavior\Interface\IFlyBehavior.h">
+      <Filter>Header Files\FlyBehavior\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="FlyBehavior\FlyNoWay.h">
+      <Filter>Header Files\FlyBehavior</Filter>
+    </ClInclude>
+    <ClInclude Include="FlyBehavior\FlyRocketPowered.h">
+      <Filter>Header Files\FlyBehavior</Filter>
+    </ClInclude>
+    <ClInclude Include="FlyBehavior\FlyWithWings.h">
+      <Filter>Header Files\FlyBehavior</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
