@@ -23,7 +23,7 @@ public:
 
 	virtual ~IDropDownComponent() = default;
 
-	bool getCheckedState()
+	eState getCheckedState()
 	{
 		return m_checkedState;
 	}
@@ -35,18 +35,18 @@ public:
 
 protected:
 
-	void setCheckedState(bool state)
+	void setCheckedState(eState state)
 	{
 		if (m_checkedState == state)
 		{
-			std::cout << getItemName() << " state already same, currentState:" << getCheckedState() << ", newState:" << state << std::endl;
+			std::cout << getItemName() << " state already same, currentState:" << static_cast<int>(getCheckedState()) << ", newState:" << static_cast<int>(state) << std::endl;
 			return;
 		}
 
-		std::cout << getItemName() << " StateChanged:" << state<< std::endl;
+		std::cout << getItemName() << " StateChanged:" << static_cast<int>(state)<< std::endl;
 		m_checkedState = state;
 	}
 
 	std::string m_itemName;
-	bool m_checkedState{false};
+	eState m_checkedState{ eState::E_OFF};
 };

@@ -19,8 +19,8 @@ public:
 	void turnOn() override;
 	void turnOff() override;
 
-	void onNotifiedByChild(bool state) override;
-	void onNotifiedByParent(bool state) override;
+	void onNotifiedByChild(eState state) override;
+	void onNotifiedByParent(eState state) override;
 
 private:
 	std::vector<std::shared_ptr<IDropDownComponent>> m_childrenDropDownItems;

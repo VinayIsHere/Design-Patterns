@@ -33,7 +33,7 @@ void DropDownObservable::unregisterObserver(std::shared_ptr<IObserver> observer)
 	}
 }
 
-void DropDownObservable::notifyChildObservers(bool state)
+void DropDownObservable::notifyChildObservers(eState state)
 {
 	for (auto observer : m_ChildObservers)
 	{
@@ -41,7 +41,7 @@ void DropDownObservable::notifyChildObservers(bool state)
 	}
 }
 
-void DropDownObservable::notifyRootObservers(bool state)
+void DropDownObservable::notifyRootObservers(eState state)
 {
 	for (auto observer : m_RootObservers)
 	{
@@ -49,7 +49,7 @@ void DropDownObservable::notifyRootObservers(bool state)
 	}
 }
 
-void DropDownObservable::notifyAllObservers(bool state)
+void DropDownObservable::notifyAllObservers(eState state)
 {
 	notifyChildObservers(state);
 	notifyRootObservers(state);

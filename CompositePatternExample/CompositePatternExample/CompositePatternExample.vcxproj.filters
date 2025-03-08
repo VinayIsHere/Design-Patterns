@@ -47,5 +47,8 @@
     <ClInclude Include="DropDownObservable.h">
       <Filter>Header Files\Observer</Filter>
     </ClInclude>
+    <ClInclude Include="StateEnum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

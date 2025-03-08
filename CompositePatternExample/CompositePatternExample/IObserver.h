@@ -1,10 +1,12 @@
 #pragma once
 
+#include "StateEnum.h"
+
 class IObserver
 {
 public:
 
-	virtual void onNotifiedByParent(bool checkedStateChanged) = 0;
-	virtual void onNotifiedByChild(bool checkedStateChanged) = 0;
+	virtual void onNotifiedByParent(eState checkedStateChanged) = 0;
+	virtual void onNotifiedByChild(eState checkedStateChanged) = 0;
 
 };

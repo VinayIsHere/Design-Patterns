@@ -13,9 +13,9 @@ public:
 	void registerChildObserver(std::shared_ptr<IObserver> observer) override;
 
 	void unregisterObserver(std::shared_ptr<IObserver> observer) override;
-	void notifyChildObservers(bool state) override;
-	void notifyRootObservers(bool state) override;
-	void notifyAllObservers(bool state) override;
+	void notifyChildObservers(eState state) override;
+	void notifyRootObservers(eState state) override;
+	void notifyAllObservers(eState state) override;
 
 private:
 

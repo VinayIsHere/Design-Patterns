@@ -26,7 +26,7 @@ void DropDownItem::turnOn()
 {
 	std::cout << "\nItem:" << getItemName() << " is turned on" << std::endl;
 
-	setCheckedState(true);
+	setCheckedState(eState::E_ON);
 	notifyAllObservers(getCheckedState());
 }
 
@@ -34,33 +34,40 @@ void DropDownItem::turnOff()
 {
 	std::cout << "\nItem:" << getItemName() << " is turned off" << std::endl;
 
-	setCheckedState(false);
+	setCheckedState(eState::E_OFF);
 	notifyAllObservers(getCheckedState());
 }
 
-void DropDownItem::onNotifiedByChild(bool state)
+void DropDownItem::onNotifiedByChild(eState state)
 {
 	std::cout << getItemName() << " notified by child" << std::endl;
 
-	if (state == false)
+	if (state == eState::E_UNDETERMINED)
 	{
-		setCheckedState(false);
+		setCheckedState(state);
+		std::cout << "setting state for " << getItemName() << " , state:" << static_cast<int>(getCheckedState()) << std::endl;
 	}
-	else if (state == true)
+	else
 	{
-		bool newState = true;
+		eState eFinalState = state;
 
 		for (auto child : m_childrenDropDownItems)
 		{
-			newState &= child.get()->getCheckedState();
+			if (child.get()->getCheckedState() != eFinalState)
+			{
+				eFinalState = eState::E_UNDETERMINED;
+				break;
+			}
 		}
 
-		setCheckedState(newState);
+		setCheckedState(eFinalState);
+		std::cout << "setting state for " << getItemName() << " , state:" << static_cast<int>(getCheckedState()) << std::endl;
 	}
+
 	notifyRootObservers(getCheckedState());
 }
 
-void DropDownItem::onNotifiedByParent(bool state)
+void DropDownItem::onNotifiedByParent(eState state)
 {
 	std::cout << getItemName() << " notified by parent" << std::endl;
 	setCheckedState(state);
